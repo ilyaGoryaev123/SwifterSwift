@@ -3,6 +3,9 @@
 #if canImport(SceneKit)
 import SceneKit
 
+#if canImport(Shared)
+import Shared
+
 // MARK: - Methods
 
 public extension SCNCapsule {
@@ -60,4 +63,5 @@ public extension SCNCapsule {
     }
 }
 
+#endif
 #endif

@@ -11,6 +11,9 @@ import UIKit
 import AppKit
 #endif
 
+#if canImport(Shared)
+import Shared
+
 // MARK: - Properties
 
 public extension NSAttributedString {
@@ -208,4 +211,5 @@ public extension Array where Element: NSAttributedString {
         }
     }
 }
+#endif
 #endif
