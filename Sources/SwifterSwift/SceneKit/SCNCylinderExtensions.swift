@@ -3,6 +3,9 @@
 #if canImport(SceneKit)
 import SceneKit
 
+#if canImport(Shared)
+import Shared
+
 // MARK: - Methods
 
 public extension SCNCylinder {
@@ -65,4 +68,5 @@ public extension SCNCylinder {
     }
 }
 
+#endif
 #endif

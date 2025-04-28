@@ -3,6 +3,9 @@
 #if canImport(SceneKit)
 import SceneKit
 
+#if canImport(Shared)
+import Shared
+
 // MARK: - Methods
 
 public extension SCNBox {
@@ -80,4 +83,5 @@ public extension SCNBox {
     }
 }
 
+#endif
 #endif

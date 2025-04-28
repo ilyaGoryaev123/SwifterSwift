@@ -7,6 +7,9 @@ import SceneKit
 import UIKit
 #endif
 
+#if canImport(Shared)
+import Shared
+
 // MARK: - Methods
 
 public extension SCNShape {
@@ -37,4 +40,5 @@ public extension SCNShape {
     #endif
 }
 
+#endif
 #endif

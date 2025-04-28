@@ -3,6 +3,9 @@
 #if canImport(SceneKit)
 import SceneKit
 
+#if canImport(Shared)
+import Shared
+
 // MARK: - Methods
 
 public extension SCNPlane {
@@ -56,4 +59,5 @@ public extension SCNPlane {
     }
 }
 
+#endif
 #endif

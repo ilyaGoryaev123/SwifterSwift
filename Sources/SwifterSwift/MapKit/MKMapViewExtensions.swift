@@ -3,6 +3,9 @@
 #if canImport(MapKit) && !os(watchOS)
 import MapKit
 
+#if canImport(Shared)
+import Shared
+
 public extension MKMapView {
     /// SwifterSwift: Dequeue reusable MKAnnotationView using class type.
     ///
@@ -63,4 +66,5 @@ public extension MKMapView {
     }
 }
 
+#endif
 #endif

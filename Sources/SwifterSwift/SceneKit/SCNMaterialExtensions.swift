@@ -3,6 +3,9 @@
 #if canImport(SceneKit)
 import SceneKit
 
+#if canImport(Shared)
+import Shared
+
 // MARK: - Methods
 
 public extension SCNMaterial {
@@ -15,4 +18,5 @@ public extension SCNMaterial {
     }
 }
 
+#endif
 #endif

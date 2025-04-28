@@ -16,6 +16,10 @@ import AppKit
 import CoreGraphics
 #endif
 
+#if canImport(Shared)
+import Shared
+#endif
+
 // MARK: - Properties
 
 public extension String {

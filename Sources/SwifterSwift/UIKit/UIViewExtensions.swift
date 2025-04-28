@@ -3,6 +3,9 @@
 #if canImport(UIKit) && !os(watchOS)
 import UIKit
 
+#if canImport(Shared)
+import Shared
+
 // MARK: - enums
 
 public extension UIView {
@@ -774,4 +777,5 @@ public extension UIView {
     }
 }
 
+#endif
 #endif
