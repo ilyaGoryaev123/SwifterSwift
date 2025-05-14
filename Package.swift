@@ -12,7 +12,7 @@ let package = Package(
         .macOS(.v10_13)
     ],
     products: [
-        .library(name: "SwifterSwiftSwiftStdlib", targets: ["SwifterSwiftSwiftStdlib"]),
+        .library(name: "SwifterSwiftStdlib", targets: ["SwifterSwiftStdlib"]),
         .library(name: "SwifterSwiftFoundation", targets: ["SwifterSwiftFoundation"]),
         .library(name: "SwifterSwiftUIKit", targets: ["SwifterSwiftUIKit"]),
         .library(name: "SwifterSwiftAppKit", targets: ["SwifterSwiftAppKit"]),
@@ -34,7 +34,7 @@ let package = Package(
             path: "Sources/SwifterSwift/Shared"
         ),
         .target(
-            name: "SwifterSwiftSwiftStdlib",
+            name: "SwifterSwiftStdlib",
             dependencies: ["Shared"],
             path: "Sources/SwifterSwift/SwiftStdlib"
         ),
@@ -104,7 +104,7 @@ let package = Package(
         .testTarget(
             name: "SwifterSwiftTests",
             dependencies: [
-                "SwifterSwiftSwiftStdlib",
+                "SwifterSwiftStdlib",
                 "SwifterSwiftFoundation",
                 "SwifterSwiftUIKit",
                 "SwifterSwiftAppKit",
